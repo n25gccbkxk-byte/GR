@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Training Arena &mdash; The Real LSAT of Atlanta</title>
+<link rel="stylesheet" href="assets/styles.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<header class="topbar">
+  <a href="index.html" class="brand">
+    <span class="peach">&#127825;</span>
+    <span class="brand-text">The Real LSAT of Atlanta</span>
+  </a>
+  <nav class="topnav">
+    <a href="lessons/logical-reasoning.html">Logical Reasoning</a>
+    <a href="lessons/reading-comprehension.html">Reading Comp</a>
+    <a href="lessons/argumentative-writing.html">Writing</a>
+    <a href="training.html">Training</a>
+    <a href="quiz.html" class="cta-link">Take the Quiz</a>
+  </nav>
+</header>
+
+<article class="lesson">
+
+  <p class="crumb">Practice &middot; Three Drill Modes</p>
+  <h1>Training Arena</h1>
+  <p class="intro">
+    A practice gym for the LSAT, run through reality TV. Pick a drill,
+    work the deck, repeat until the moves feel automatic. Three modes,
+    each targeting a different core competency.
+  </p>
+
+  <div class="training-tabs" role="tablist">
+    <button class="training-tab is-active" data-mode="concept" role="tab" aria-selected="true">
+      <span class="tab-num">01</span>
+      <span class="tab-label">Concept Drills</span>
+      <span class="tab-sub">Question-type mastery</span>
+    </button>
+    <button class="training-tab" data-mode="trap" role="tab" aria-selected="false">
+      <span class="tab-num">02</span>
+      <span class="tab-label">Trap Spotter</span>
+      <span class="tab-sub">Name the wrong-answer pattern</span>
+    </button>
+    <button class="training-tab" data-mode="conclusion" role="tab" aria-selected="false">
+      <span class="tab-num">03</span>
+      <span class="tab-label">Find the Conclusion</span>
+      <span class="tab-sub">Decompose any stimulus</span>
+    </button>
+  </div>
+
+  <!-- ============ Mode 1: Concept Drills ============ -->
+  <section class="training-panel" data-panel="concept">
+    <p class="panel-intro">
+      Pick a question type. You'll work through a short deck of mini-stimuli
+      one at a time, with immediate feedback and a trap-aware
+      explanation on every miss.
+    </p>
+
+    <div class="concept-chips" id="concept-chips">
+      <!-- chips populated by training.js -->
+    </div>
+
+    <div id="concept-drill-area" class="drill-area">
+      <p class="drill-empty">Pick a concept above to start drilling.</p>
+    </div>
+  </section>
+
+  <!-- ============ Mode 2: Trap Spotter ============ -->
+  <section class="training-panel hidden" data-panel="trap">
+    <p class="panel-intro">
+      Fastest way to internalize wrong-answer patterns. You'll see a
+      stimulus and <em>one</em> wrong answer. Name the trap from the
+      labels below. Speed reps build the reflex.
+    </p>
+
+    <div id="trap-drill-area" class="drill-area">
+      <!-- populated by training.js -->
+    </div>
+  </section>
+
+  <!-- ============ Mode 3: Find the Conclusion ============ -->
+  <section class="training-panel hidden" data-panel="conclusion">
+    <p class="panel-intro">
+      The single most important skill on the entire LSAT: find the
+      conclusion. Read the stimulus, then click the sentence the
+      speaker is trying to <em>prove</em> &mdash; not a premise, not a
+      background fact, not a counter-claim. The conclusion.
+    </p>
+
+    <div id="conclusion-drill-area" class="drill-area">
+      <!-- populated by training.js -->
+    </div>
+  </section>
+
+</article>
+
+<footer class="footer">
+  <p>The Real LSAT of Atlanta &middot; an LSAT principles training platform.</p>
+  <p class="footnote">Not affiliated with Bravo, NBCUniversal, Hulu, the Law School Admission Council, or the Kardashian-Jenner family.</p>
+</footer>
+
+<script src="assets/app.js"></script>
+<script src="assets/training.js"></script>
+</body>
+</html>
