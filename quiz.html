@@ -30,12 +30,14 @@
   <h1>The Reunion Quiz</h1>
   <p class="intro">
     Seven LSAT-style questions taught the only way that matters &mdash;
-    on the reunion couch. Click an answer to grade it. Wrong answers
-    don't penalize you; understanding why beats memorizing what.
+    on the reunion couch. Click an answer to grade it. Any wrong pick
+    is automatically logged in your <a href="#journal">Wrong Answer
+    Journal</a> below, with an in-depth breakdown of why that trap
+    works.
   </p>
 
   <!-- Q1: Necessary Assumption -->
-  <div class="quiz-q" data-correct="2">
+  <div class="quiz-q" data-qid="1" data-qtype="Logical Reasoning &middot; Necessary Assumption" data-correct="2">
     <div class="qnum">Question 1 &middot; Logical Reasoning &middot; Necessary Assumption</div>
     <p class="stem">
       <em>Stimulus.</em> Kim argues that SKIMS is a stronger brand than
@@ -44,11 +46,11 @@
     </p>
     <p class="qstem">Which of the following is an assumption Kim's argument requires?</p>
     <ol class="quiz-choices">
-      <li>SKIMS spends less on marketing than its competitor.</li>
-      <li>The competitor's quarterly revenue is publicly disclosed.</li>
+      <li data-trap="OUT OF SCOPE. Marketing spend has no bearing on whether revenue is the truest measure of brand strength. Run the negation test: 'SKIMS spends MORE on marketing than its competitor.' Kim's argument is completely untouched. If negating a choice leaves the argument standing, that choice is not a necessary assumption.">SKIMS spends less on marketing than its competitor.</li>
+      <li data-trap="PREMISE BOOSTER about evidence, not logic. Kim has already asserted the revenue comparison; whether the underlying data is public is a question of HOW she knows, not whether her argument WORKS. The argument's validity does not depend on the disclosure status of competitor financials.">The competitor's quarterly revenue is publicly disclosed.</li>
       <li>No measure other than revenue is a more accurate indicator of brand strength.</li>
-      <li>SKIMS will continue to outperform the competitor next quarter.</li>
-      <li>The competitor sells the same product categories as SKIMS.</li>
+      <li data-trap="WRONG TIME FRAME. Kim's conclusion is about CURRENT brand strength, not future performance. Even if SKIMS collapses next quarter, the present-tense claim 'SKIMS is a stronger brand' can still follow from the present-tense premise about revenue. The argument does not need this prediction.">SKIMS will continue to outperform the competitor next quarter.</li>
+      <li data-trap="STRONGEST DISTRACTOR &mdash; this is the one designed to bait you. Kim's premise is that revenue is the truest measure. Even if the two companies sell wildly different product categories, that premise treats revenue itself as the standard, so the comparison still goes through on her terms. The argument doesn't depend on product overlap; the correct answer (C) blocks the only escape: that some OTHER measure is more accurate.">The competitor sells the same product categories as SKIMS.</li>
     </ol>
     <div class="quiz-explain">
       <strong>Answer: C.</strong> Kim's premise is that <em>revenue is
@@ -60,7 +62,7 @@
   </div>
 
   <!-- Q2: Strengthen -->
-  <div class="quiz-q" data-correct="1">
+  <div class="quiz-q" data-qid="2" data-qtype="Logical Reasoning &middot; Strengthen" data-correct="1">
     <div class="qnum">Question 2 &middot; Logical Reasoning &middot; Strengthen</div>
     <p class="stem">
       <em>Stimulus.</em> Cynthia argues that the show should add an
@@ -70,11 +72,11 @@
     </p>
     <p class="qstem">Which of the following, if true, most strengthens Cynthia's argument?</p>
     <ol class="quiz-choices">
-      <li>Episodes set abroad cost more to film than domestic episodes.</li>
+      <li data-trap="WRONG DIRECTION (weakener, not strengthener). Higher cost is a reason NOT to film abroad. Strengthen questions reward facts that make the recommendation more defensible; cost concerns push the other way. Always check which direction your answer pulls before locking it in.">Episodes set abroad cost more to film than domestic episodes.</li>
       <li>Internal Bravo research shows audience interest in cast travel episodes has grown each year for the past three seasons.</li>
-      <li>Anguilla is a popular vacation destination for fans of the show.</li>
-      <li>The cast has not filmed abroad in two years.</li>
-      <li>Cynthia would personally enjoy filming in Anguilla.</li>
+      <li data-trap="WRONG SUBJECT. Cynthia's conclusion concerns ratings during the AIRED episode &mdash; not fans' personal vacation choices. Booking a flight to Anguilla and tuning into an episode set there are different behaviors. LSAT traps frequently swap one related-but-distinct subject for another.">Anguilla is a popular vacation destination for fans of the show.</li>
+      <li data-trap="NEUTRAL FACT dressed up to look helpful. A two-year gap could cut either way &mdash; maybe audiences are eager for travel content again, or maybe they have moved on. The choice supplies no evidence about WHICH effect dominates, so it can't strengthen the argument.">The cast has not filmed abroad in two years.</li>
+      <li data-trap="SPEAKER-PREFERENCE TRAP. Cynthia's PERSONAL enjoyment is irrelevant to a ratings-based recommendation. Strengthen answers must support the CONCLUSION on the terms the stimulus laid out (here, ratings); a fact about the speaker's tastes does no work for the audience-facing claim.">Cynthia would personally enjoy filming in Anguilla.</li>
     </ol>
     <div class="quiz-explain">
       <strong>Answer: B.</strong> A strengthener adds evidence that the
@@ -86,7 +88,7 @@
   </div>
 
   <!-- Q3: Weaken -->
-  <div class="quiz-q" data-correct="3">
+  <div class="quiz-q" data-qid="3" data-qtype="Logical Reasoning &middot; Weaken" data-correct="3">
     <div class="qnum">Question 3 &middot; Logical Reasoning &middot; Weaken</div>
     <p class="stem">
       <em>Stimulus.</em> Khloé argues that the Good American denim line
@@ -96,11 +98,11 @@
     </p>
     <p class="qstem">Which of the following, if true, most undermines Khloé's argument?</p>
     <ol class="quiz-choices">
-      <li>The campaign featured influencers with large followings.</li>
-      <li>Other Good American launches have also sold out quickly.</li>
-      <li>Most fashion launches are restocked within two weeks.</li>
+      <li data-trap="WRONG DIRECTION (strengthener). Large-following influencers are a reason to believe the campaign could move product &mdash; that supports Khloé's causal claim, it does not undermine it. On a weaken question, always confirm the answer pulls AGAINST the conclusion before selecting.">The campaign featured influencers with large followings.</li>
+      <li data-trap="AMBIGUOUS &mdash; could go either way. If prior launches sold out, it might suggest the brand always sells out (which weakens the campaign-specific causation). But it could equally mean the brand reliably uses good campaigns. (D) is decisive because it identifies a CONCRETE ALTERNATE CAUSE for THIS sellout. Decisive beats ambiguous on weaken questions.">Other Good American launches have also sold out quickly.</li>
+      <li data-trap="DOWNSTREAM and IRRELEVANT. Restocking happens AFTER selling out; it tells you nothing about WHY the line sold out in the first place. Khloé's causal chain (campaign &rarr; sellout) is the target &mdash; restocking timing doesn't touch it.">Most fashion launches are restocked within two weeks.</li>
       <li>The launch quantity was deliberately limited to one-third of typical launches.</li>
-      <li>Influencer marketing campaigns are widely used in the industry.</li>
+      <li data-trap="BACKGROUND FACT. Industry-wide adoption of a tactic doesn't tell you whether THIS particular campaign worked. 'Everyone does X' is not evidence about a specific instance of X. The causal chain in Khloé's argument is untouched.">Influencer marketing campaigns are widely used in the industry.</li>
     </ol>
     <div class="quiz-explain">
       <strong>Answer: D.</strong> Khloé draws a causal line from
@@ -113,7 +115,7 @@
   </div>
 
   <!-- Q4: Flaw -->
-  <div class="quiz-q" data-correct="2">
+  <div class="quiz-q" data-qid="4" data-qtype="Logical Reasoning &middot; Flaw" data-correct="2">
     <div class="qnum">Question 4 &middot; Logical Reasoning &middot; Flaw</div>
     <p class="stem">
       <em>Stimulus.</em> Drew argues: "Kandi has been on this show
@@ -122,11 +124,11 @@
     </p>
     <p class="qstem">The reasoning in Drew's argument is most vulnerable to criticism on the grounds that it...</p>
     <ol class="quiz-choices">
-      <li>Mistakes a sufficient condition for a necessary one.</li>
-      <li>Generalizes from a single instance to a universal claim.</li>
+      <li data-trap="REAL FLAW, WRONG FIT. Sufficient-vs-necessary errors live in conditional logic ('if A then B' confused with 'only if A, B'). Drew's argument is an authority appeal &mdash; no conditional structure is in play. On flaw questions, name the move FIRST, then match. Don't pick a famous flaw label just because it sounds smart.">Mistakes a sufficient condition for a necessary one.</li>
+      <li data-trap="REAL FLAW, WRONG FIT. Hasty generalization requires extrapolating from a sample (e.g., 'one housewife was late, so all are unreliable'). Drew isn't generalizing across data points; she's deferring to one authority on a judgment call. Different flaw family entirely.">Generalizes from a single instance to a universal claim.</li>
       <li>Treats tenure as proof of being correct.</li>
-      <li>Confuses correlation with causation.</li>
-      <li>Relies on circular reasoning.</li>
+      <li data-trap="REAL FLAW, WRONG FIT. Correlation-causation flaws require a CAUSAL claim ('X caused Y because they happen together'). Drew is making a JUDGMENT claim ('Kandi must be right because of her tenure'). No causal arrow is involved. This is the most popular trap on flaw questions &mdash; correlation/causation is so memorable students reach for it reflexively.">Confuses correlation with causation.</li>
+      <li data-trap="REAL FLAW, WRONG FIT. Circular reasoning means the conclusion appears among the premises ('the show is great because it's great'). Drew's premise (Kandi has been on the show longer) and conclusion (Kandi must be right) are DISTINCT propositions, so the argument isn't circular &mdash; it's an authority appeal.">Relies on circular reasoning.</li>
     </ol>
     <div class="quiz-explain">
       <strong>Answer: C.</strong> Drew is committing an
@@ -140,7 +142,7 @@
   </div>
 
   <!-- Q5: Parallel Reasoning -->
-  <div class="quiz-q" data-correct="2">
+  <div class="quiz-q" data-qid="5" data-qtype="Logical Reasoning &middot; Parallel Reasoning" data-correct="2">
     <div class="qnum">Question 5 &middot; Logical Reasoning &middot; Parallel Reasoning</div>
     <p class="stem">
       <em>Stimulus.</em> If the reunion is filmed in New York, Andy
@@ -149,11 +151,11 @@
     </p>
     <p class="qstem">Which of the following arguments has the same logical structure as the argument above?</p>
     <ol class="quiz-choices">
-      <li>If it rains, the picnic is canceled. The picnic is canceled, so it must have rained.</li>
-      <li>If the deal closes, the team gets bonuses. The team is getting bonuses. So the deal closed.</li>
+      <li data-trap="AFFIRMING THE CONSEQUENT &mdash; an INVALID structure. The stimulus is a VALID hypothetical syllogism (A&rarr;B, B&rarr;C, so A&rarr;C). Parallel-reasoning answers must match the validity status. Valid pairs with valid; invalid with invalid. Picking an invalid argument to match a valid one is a sure miss.">If it rains, the picnic is canceled. The picnic is canceled, so it must have rained.</li>
+      <li data-trap="AFFIRMING THE CONSEQUENT (again). Bonus' &rarr; deal closed' reverses the implication. Same invalid structure as choice A. Parallel-reasoning traps often cluster two answers with the same wrong fallacy to make sure you can tell modus ponens from its reversal.">If the deal closes, the team gets bonuses. The team is getting bonuses. So the deal closed.</li>
       <li>If a car is electric, it has a battery. If a car has a battery, it can be plugged in. So if a car is electric, it can be plugged in.</li>
-      <li>Either the show is renewed or the cast disbands. The show is renewed. So the cast does not disband.</li>
-      <li>All housewives are dramatic. Marlo is a housewife. So Marlo is dramatic.</li>
+      <li data-trap="DISJUNCTIVE SYLLOGISM. 'Either P or Q; P; therefore not Q' is a different valid form. The stimulus is a chain of conditionals, not an exclusive-or elimination. Same validity, different SHAPE &mdash; and shape is what parallel reasoning measures.">Either the show is renewed or the cast disbands. The show is renewed. So the cast does not disband.</li>
+      <li data-trap="CATEGORICAL SYLLOGISM (universal &rarr; instance). 'All M are D; X is M; so X is D' is valid but structurally different &mdash; it goes from a class to a member, not from one conditional to another. Don't confuse 'all/some' logic with 'if/then' logic.">All housewives are dramatic. Marlo is a housewife. So Marlo is dramatic.</li>
     </ol>
     <div class="quiz-explain">
       <strong>Answer: C.</strong> The stimulus is a
@@ -166,7 +168,7 @@
   </div>
 
   <!-- Q6: Reading Comp - Main Point -->
-  <div class="quiz-q" data-correct="1">
+  <div class="quiz-q" data-qid="6" data-qtype="Reading Comprehension &middot; Main Point" data-correct="1">
     <div class="qnum">Question 6 &middot; Reading Comprehension &middot; Main Point</div>
     <p class="stem">
       <em>Passage (excerpt).</em> Kris writes: "For nearly twenty years
@@ -182,11 +184,11 @@
     </p>
     <p class="qstem">Which of the following most accurately expresses the main point of the passage?</p>
     <ol class="quiz-choices">
-      <li>Audiences are increasingly fatigued by the family's media output.</li>
+      <li data-trap="PREMISE DRESSED AS CONCLUSION. Fatigue is something the author CONCEDES on the way to her real point (a programming shift). Main point traps love to surface a premise so you'll mistake it for the thesis. Ask: is this what the author is trying to PROVE, or is it support FOR what she's trying to prove?">Audiences are increasingly fatigued by the family's media output.</li>
       <li>The family should shift away from scripted long-form programming and toward platforms that reward unmediated presence, because the fatigue critics identify is with produced content rather than with proximity itself.</li>
-      <li>Critics of the family's strategy have offered no useful insight.</li>
-      <li>The family should leave reality television entirely.</li>
-      <li>Scripted long-form programming has become unprofitable.</li>
+      <li data-trap="MISSTATES THE AUTHOR'S VIEW. She explicitly says critics are 'not wrong about the fatigue.' That is partial agreement, not blanket dismissal. Watch for tone words ('not wrong, but...') &mdash; they flag hedged positions that extreme answers misrepresent.">Critics of the family's strategy have offered no useful insight.</li>
+      <li data-trap="OVERREACH. The author is RECOMMITTING to the camera (just on different platforms), not retreating from reality television. RC main-point traps frequently exaggerate the author's prescription &mdash; turning a 'reduce by half' into a 'leave entirely.'">The family should leave reality television entirely.</li>
+      <li data-trap="OUTSIDE INFORMATION. The passage discusses viewer fatigue and engagement, not profitability. Importing economic concepts the passage didn't raise is a classic RC trap &mdash; the answer must be supported by the FOUR CORNERS of the text.">Scripted long-form programming has become unprofitable.</li>
     </ol>
     <div class="quiz-explain">
       <strong>Answer: B.</strong> The main point must cover the whole
@@ -199,7 +201,7 @@
   </div>
 
   <!-- Q7: Writing -->
-  <div class="quiz-q" data-correct="2">
+  <div class="quiz-q" data-qid="7" data-qtype="Argumentative Writing &middot; Structure" data-correct="2">
     <div class="qnum">Question 7 &middot; Argumentative Writing &middot; Structure</div>
     <p class="stem">
       You are writing an LSAT Argumentative Writing essay and have
@@ -208,11 +210,11 @@
     </p>
     <p class="qstem">Which of the following best describes what paragraph three should do?</p>
     <ol class="quiz-choices">
-      <li>Introduce a brand-new reason in favor of filming the wedding.</li>
-      <li>Restate the thesis using stronger language.</li>
+      <li data-trap="WRONG LOCATION. New affirmative reasons belong in paragraphs 1 and 2. The third paragraph's job is to engage the OPPOSING side &mdash; adding a fresh pro-argument here means you never address the counterposition, which is the single biggest factor separating mid-rated essays from top-rated ones.">Introduce a brand-new reason in favor of filming the wedding.</li>
+      <li data-trap="WRONG PARAGRAPH. Restating the thesis is the CLOSING paragraph's job. Doing it in paragraph three skips the counterposition entirely and produces a redundant essay. Scorers reward structural discipline; don't reuse the closer's move in the middle.">Restate the thesis using stronger language.</li>
       <li>Present the strongest version of the opposing position, concede what is true about it, and explain why it does not change the conclusion.</li>
-      <li>Provide a personal anecdote about weddings the writer has attended.</li>
-      <li>Quote the evidence verbatim without commentary.</li>
+      <li data-trap="EXPLICITLY PENALIZED. Personal anecdotes substitute the writer's experience for the EVIDENCE PROVIDED in the prompt. Argumentative Writing scoring rubrics flag this as a defect &mdash; you must engage the supplied evidence, not your own.">Provide a personal anecdote about weddings the writer has attended.</li>
+      <li data-trap="EVIDENCE WITHOUT REASONING. Quoting verbatim without commentary leaves the connection between evidence and claim unmade. The reader has to do the work the essay was supposed to do. Scorers want to see HOW the evidence supports the position &mdash; the quote is the raw material, not the argument.">Quote the evidence verbatim without commentary.</li>
     </ol>
     <div class="quiz-explain">
       <strong>Answer: C.</strong> The counterposition paragraph is what
@@ -225,13 +227,31 @@
     </div>
   </div>
 
+  <!-- Wrong Answer Journal -->
+  <section id="journal" class="journal">
+    <div class="journal-head">
+      <div>
+        <h2 class="journal-title">Wrong Answer Journal</h2>
+        <p class="journal-sub">
+          Every miss is auto-logged here with the trap name and an
+          in-depth breakdown. Saved in your browser &mdash; come back
+          tomorrow, it'll still be here.
+        </p>
+      </div>
+      <button id="journal-clear" class="btn ghost journal-clear hidden" type="button">Clear journal</button>
+    </div>
+    <div id="journal-entries" class="journal-entries">
+      <p class="journal-empty">No misses yet. Get one wrong and it'll appear here with the receipts.</p>
+    </div>
+  </section>
+
   <div class="quiz-score">
     <span>Score</span>
-    <span><span class="score-num" id="score-correct">0</span> / <span id="score-total">7</span> &middot; <span id="score-answered">0</span> answered</span>
+    <span><span class="score-num" id="score-correct">0</span> / <span id="score-total">7</span> &middot; <span id="score-answered">0</span> answered &middot; <span id="score-journal">0</span> in journal</span>
   </div>
 
   <p style="margin-top: 30px; text-align: center; color: var(--ink-mute); font-size: 13px;">
-    Reset by refreshing the page.
+    Refresh the page to retake. Your journal persists.
   </p>
 
 </article>
